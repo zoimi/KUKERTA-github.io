@@ -1,0 +1,163 @@
+/* filename: style.css
+this is the css file for index.html file
+Muna Putra Yuda M
+1903155332 */
+
+/*adds a sticky navigation bar*/
+#navbar {
+    height: 30px;
+    background-color: #d89279;
+    padding: 10px;
+}
+/* this segment consists of the author's name and photo*/
+#about {
+    margin: auto;
+    background-color: #F1DDCF;
+    padding: 50px;
+    text-align: left;
+    color: #8C4A2F;
+}
+
+#about h1 {
+    color: #C7622B;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* adds footer on web page */
+#footer {
+    background-color: #d89279;
+    color: white;
+    text-align: right;
+    height: 90px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+img {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+li a {
+    padding: 20px; 
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    background-color: white;
+    color: #d89279;
+}
+.center {
+    margin: auto;
+    background-color: #eeeee6;
+    color: #8C4A2F;
+    padding: 20px;
+    text-align: center;
+}
+.center h3 {
+    color: #C7622B;
+}
+.message {
+    width: 600px;
+    margin: auto;
+}
+.myimg {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+    float: left;
+    margin-right: 10px;
+}
+/*a sticky class for the navigation bar*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+/* kakulator*/
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #F1DDCF, #d89279);
+}
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
